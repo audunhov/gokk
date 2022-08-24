@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+---
+
+<Layout title="Bli Medlem">
+    <h1>BLI MEDLEM</h1>
+
+    <section>
+        <p>NB! Snart kommer det en knapp. Inntil videre, send en mail til leder og meld interesse!</p>
+        <a href="mailto:hammerhovda@gmail.com" class=" block m-auto w-fit mt-2 ">Audun Hammer Hovda</a>
+    </section>
+
+    <section>
+        <h2>FAQ</h2>
+        <ul>
+            <li>
+                <h3>Koster det noe å bli medlem?</h3>
+                <p>Nei! Det er helt gratis å bli medlem av GOKK</p>
+            </li>
+            <li>
+                <h3>Må man kunne kode?</h3>
+                <p>Nei</p>
+            </li>
+        </ul>
+    </section>
+</Layout>
+
+<style>
+    h3 {
+        font-size: x-large;
+        font-weight: bold;
+    }
+
+    li {
+        list-style-type: decimal;
+        @apply mb-3
+    }
+</style>
