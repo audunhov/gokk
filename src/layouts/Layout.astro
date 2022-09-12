@@ -3,6 +3,7 @@ export interface Props {
 	title: string;
 }
 import Navbar from '../components/Navbar.vue';
+import Modal from '../components/Modal.vue';
 import Footer from '../components/Footer.vue';
 const { title } = Astro.props as Props;
 ---
@@ -17,7 +18,7 @@ const { title } = Astro.props as Props;
 		<title>{title}</title>
 	</head>
 	<body class="m-2 flex flex-col">
-		<Navbar/>
+		<Navbar direction='row' client:load/>
 		<div class="flex flex-col mt-10 md:mt-20 m-auto">
 			<h1>{title.toUpperCase()}</h1>
 			<div class="max-w-lg m-auto">
@@ -27,6 +28,7 @@ const { title } = Astro.props as Props;
 		<Footer />
 	</body>
 </html>
+
 <style>
 	:root {
 		--font-size-base: 20px;
